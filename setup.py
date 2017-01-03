@@ -42,7 +42,7 @@ Operating System :: MacOS
 
 MAJOR = 1
 MINOR = 0
-MICRO = 42
+MICRO = 0
 ISRELEASED = True
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 
@@ -140,24 +140,21 @@ def setup_package():
     # Rewrite the version file every time
     write_version_py()
 
-    if HAVE_SPHINX:
-        cmdclass = {'build_sphinx': ScipyBuildDoc}
-    else:
-        cmdclass = {}
+    cmdclass = {}
 
     build_requires = []
 
     metadata = dict(
             name='mastermethod',
             version=get_version_info()[0],
-            packages=['mastermethod'],
+            packages=[],
         maintainer="Software Mechanic",
         maintainer_email="softwaremechanic32@gmail.com",
         description=DOCLINES[0],
         long_description="\n".join(DOCLINES[2:]),
-        url="https://github.com/greytip/-data-science-utils.git",
-        download_url="https://github.com/greytip/-data-science-utils/releases",
-        license='GNU GPL v3',
+        url="https://github.com/emofeedback/mastermethod.git",
+        download_url="https://github.com/emofeedback/mastermethod/releases",
+        license='MIT',
         cmdclass=cmdclass,
         classifiers=[_f for _f in CLASSIFIERS.split('\n') if _f],
         platforms=["Windows", "Linux", "Solaris", "Mac OS-X", "Unix"],
