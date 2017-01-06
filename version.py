@@ -1,9 +1,9 @@
 
 # THIS FILE IS GENERATED FROM SCIPY SETUP.PY
-short_version = '1.0.0'
-version = '1.0.0'
-full_version = '1.0.0'
-git_revision = '4032a1084590a81be7c15ec08d61b046e982661c'
+short_version = '1.0.1'
+version = '1.0.1'
+full_version = '1.0.1'
+git_revision = 'dcacca04543aadd7a786fe424b6aa0fba880ce64'
 release = True
 
 if not release:
